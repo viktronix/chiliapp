@@ -1,0 +1,68 @@
+<div id="app">
+    <h1>Guess the chili on the picture</h1>
+  
+    <div class="display1">
+      <img src="" alt="Smiley face" height="100%" width="100%" id="chili-picture">
+    </div>
+  
+    <div id="guess-form" class="display2">
+      <div class="form">
+       Wrong picture:<input type="checkbox" id="iswrong" name="iswrong" value="true">
+      </div>
+      <div class="form">
+       Experience:
+      <select name="experience" id="experience">
+        <option value="none">Select one</option>
+        <option value="pro">Professional Chili Farmer</option>
+        <option value="hobby">Hobby Farmer</option>
+        <option value="few">Have few plants</option>
+        <option value="likes">Just eat frequently</option>
+        <option value="amateur">Amateur</option>
+      </select>
+      </div>
+      <div class="autocomplete form" style="width:300px;">
+        <input id="ChiliInput" type="text" placeholder="Chili's type">
+      </div>
+        <input type="submit" value="Guess" id="submit">
+    </div>
+  
+    <div id="solution">
+    </div>
+  <div>
+    <button type="button" class="collapsible">Check available chilis</button>
+    <div id="chili-names" class="content">
+    </div>
+  </div>
+  </div>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDjP0yRaoQQL3WjGxPU-tCOdloICJxWbpo",
+      authDomain: "deep-chili.firebaseapp.com",
+      databaseURL: "https://deep-chili.firebaseio.com",
+      projectId: "deep-chili",
+      storageBucket: "deep-chili.appspot.com",
+      messagingSenderId: "232012993009",
+      appId: "1:232012993009:web:752c4bd28dc35d771b3450",
+      measurementId: "G-P97GPP197G"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    var db = firebase.firestore();
+    var userid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+      return v.toString(16);
+    });
+    var total_guess = 0;
+    var good_guess = 0;
+  </script>
