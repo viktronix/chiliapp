@@ -1,9 +1,9 @@
 // Import stylesheets
 import './style.css';
-import { autocomplete } from './autocomplete';
-import { chilis } from './classes';
-import { displayImage } from './random_image';
-import { guess } from './guess';
+import { autocomplete } from './autocomplete.js';
+import { chilis } from './classes.js';
+import { displayImage } from './random_image.js';
+import { guess } from './guess.js';
 
 // Write Javascript code!
 
