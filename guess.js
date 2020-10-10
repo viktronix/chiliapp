@@ -1,5 +1,5 @@
-import { displayImage } from './random_image';
-import { write_guess } from './store';
+import { displayImage } from './random_image.js';
+import { write_guess } from './store.js';
 
  export function guess()  {
     var chili_input = document.getElementById("ChiliInput");
