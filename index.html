@@ -14,6 +14,29 @@
     <title>Chili App</title>
   </head>
   <body>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDjP0yRaoQQL3WjGxPU-tCOdloICJxWbpo",
+        authDomain: "deep-chili.firebaseapp.com",
+        databaseURL: "https://deep-chili.firebaseio.com",
+        projectId: "deep-chili",
+        storageBucket: "deep-chili.appspot.com",
+        messagingSenderId: "232012993009",
+        appId: "1:232012993009:web:752c4bd28dc35d771b3450",
+        measurementId: "G-P97GPP197G"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      var db = firebase.firestore();
+      var userid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+        var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+        return v.toString(16);
+      });
+      var total_guess = 0;
+      var good_guess = 0;
+    </script>
     <div id="app">
       <h1>Guess the chili on the picture</h1>
       <div class="display1">
@@ -47,28 +70,4 @@
       </div>
     </div>
   </body>
-</html>
-  
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyDjP0yRaoQQL3WjGxPU-tCOdloICJxWbpo",
-      authDomain: "deep-chili.firebaseapp.com",
-      databaseURL: "https://deep-chili.firebaseio.com",
-      projectId: "deep-chili",
-      storageBucket: "deep-chili.appspot.com",
-      messagingSenderId: "232012993009",
-      appId: "1:232012993009:web:752c4bd28dc35d771b3450",
-      measurementId: "G-P97GPP197G"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    var db = firebase.firestore();
-    var userid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
-      var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
-      return v.toString(16);
-    });
-    var total_guess = 0;
-    var good_guess = 0;
-  </script>
+</html> 
