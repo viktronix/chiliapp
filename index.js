@@ -1,13 +1,7 @@
-// Import stylesheets
-import './style.css';
 import { autocomplete } from './autocomplete.js';
 import { chilis } from './classes.js';
 import { displayImage } from './random_image.js';
 import { guess } from './guess.js';
-
-// Write Javascript code!
-
-
 
 autocomplete(document.getElementById("ChiliInput"), chilis.map(x => x.split("_").join(" ")));
 
