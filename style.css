@@ -68,10 +68,8 @@ h1, h2 {
   }
   
   #chili-names {
-      /* width:97%; */
       font-size:20px;
       word-break:break-all;
-      /* column-count: 2; */
   }
 
   #solution {
@@ -110,7 +108,25 @@ h1, h2 {
     background-color: #f1f1f1;
     width: 97%;
   }
+
+  #app {
+    margin: 0vh 10vh;
+    background-color: white;
+    border-radius: 5px;
+  }
   
+  .display1, .display2 {
+    border-style: solid;
+    border-color: grey;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .display2 {
+    vertical-align: top;
+    text-align: left;
+  }
+
   @media only screen and (max-width: 1260px) {
     h1 {
       font-size: 6vh;
@@ -121,16 +137,9 @@ h1, h2 {
     }
   
     .display1, .display2 {
-      border-style: solid;
-      border-color: grey;
-      display: inline-block;
       min-width: 40vh;
       min-height: 40vh;
-      border-radius: 5px;
-    }
-
-    .display2 {
-      vertical-align: top;
+      font-size: large;
     }
 
     .center {
@@ -140,13 +149,6 @@ h1, h2 {
       padding: 10px;
       text-align: center;
     }
-
-    #app {
-      margin: 0vh 10vh;
-      background-color: white;
-      border-radius: 5px;
-      /* padding-bottom: 50vh; */
-    }
     
     .form {
       padding: 2vh;
@@ -154,6 +156,10 @@ h1, h2 {
 
     .content {
       width: 95%;
+    }
+
+    #solution {
+      font-size: 4vh;
     }
   } 
 
@@ -165,23 +171,59 @@ h1, h2 {
   #chili-names {
     column-count: 2;
   }
+
   .display1, .display2 {
-    border-style: solid;
-    border-color: grey;
-    display: inline-block;
     min-width: 50vh;
     min-height: 50vh;
-    border-radius: 5px;
   }
 
   .content {
     width: 90%;
   }
+
+  #solution {
+    font-size: 3vh;
+  }
 }
 
 @media only screen and (max-width: 770px) {
+  h1 {
+    font-size: 3vh;
+    padding: 1% 0%;
+  }
+
   #chili-names {
     column-count: 1;
+  }
+
+  .display1 {
+    min-width: 40vh;
+    min-height: 40vh;
+    margin-bottom: 2vh;
+  }
+
+  .display2 {
+    min-width: 40vh;
+    min-height: 15vh;
+  }
+
+  #ChiliInput {
+    width: 20vh;
+  }
+
+  .form {
+    padding: 1vh;
+  }
+
+  #app {
+    margin: 0vh  0vh;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  #solution {
+    font-size: 2vh;
+    font-weight: bold;
   }
 }
 
@@ -196,27 +238,11 @@ h1, h2 {
   
   #chili-names {
     column-count: 4;
-}
+  }
 
   .display1, .display2 {
-    border-style: solid;
-    border-color: grey;
-    display: inline-block;
     min-width: 50vh;
     min-height: 50vh;
-    border-radius: 5px;
-  }
-  
-  .display2 {
-    vertical-align: top;
-    text-align: left;
-  }
-  
-  #app {
-    margin: 0vh 10vh;
-    background-color: white;
-    border-radius: 5px;
-    /* padding-bottom: 50vh; */
   }
   
   .form {
