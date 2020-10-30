@@ -39,30 +39,34 @@
     </script>
     <div id="app">
       <h1>Guess the chili on the picture</h1>
-      <div class="display1">
-        <img src="" alt="Smiley face" height="100%" width="100%" id="chili-picture">
-      </div>
-      <div id="guess-form" class="display2">
-        <div class="form">
-          Wrong picture:<input type="checkbox" id="iswrong" name="iswrong" value="true">
+      <div class="center">
+        <div class="display1">
+          <img src="" alt="Smiley face" height="100%" width="100%" id="chili-picture">
         </div>
-        <div class="form">
-          Experience:
-          <select name="experience" id="experience">
-            <option value="none">Select one</option>
-            <option value="pro">Professional Chili Farmer</option>
-            <option value="hobby">Hobby Farmer</option>
-            <option value="few">Have few plants</option>
-            <option value="likes">Just eat frequently</option>
-            <option value="amateur">Amateur</option>
-          </select>
+        <div id="guess-form" class="display2">
+          <div class="form">
+            Wrong picture:<input type="checkbox" id="iswrong" name="iswrong" value="true">
+          </div>
+          <div class="form">
+            Experience:
+            <select name="experience" id="experience">
+              <option value="none">Select one</option>
+              <option value="pro">Professional Chili Farmer</option>
+              <option value="hobby">Hobby Farmer</option>
+              <option value="few">Have few plants</option>
+              <option value="likes">Just eat frequently</option>
+              <option value="amateur">Amateur</option>
+            </select>
+          </div>
+          <div class="autocomplete form" style="width:300px;">
+            <input id="ChiliInput" type="text" placeholder="Chili's type">
+          </div>
+          <div class="form" style="text-align: right;">
+            <input type="submit" value="Guess" id="submit">
+          </div>
         </div>
-        <div class="autocomplete form" style="width:300px;">
-          <input id="ChiliInput" type="text" placeholder="Chili's type">
+        <div id="solution">
         </div>
-          <input type="submit" value="Guess" id="submit">
-      </div>
-      <div id="solution">
       </div>
       <div>
         <button type="button" class="collapsible">Check available chilis</button>

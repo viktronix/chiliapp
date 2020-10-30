@@ -5,6 +5,7 @@ h1, h2 {
   h1 {
     text-align: center;
     padding: 2% 0%;
+    font-size: 8vh;
   }
   
   /* * { box-sizing: border-box; } */
@@ -12,25 +13,30 @@ h1, h2 {
     font: 16px Lato;
     background-color: lightgray;
   }
+
   .autocomplete {
     /*the container must be positioned relative:*/
     position: relative;
     display: inline-block;
   }
+
   input {
     border: 1px solid transparent;
     background-color: #f1f1f1;
     padding: 10px;
     font-size: 16px;
   }
+
   input[type=text] {
     background-color: #f1f1f1;
     width: 100%;
   }
+
   input[type=submit] {
     background-color: DodgerBlue;
     color: #fff;
   }
+
   .autocomplete-items {
     position: absolute;
     border: 1px solid #d4d4d4;
@@ -42,16 +48,19 @@ h1, h2 {
     left: 0;
     right: 0;
   }
+
   .autocomplete-items div {
     padding: 10px;
     cursor: pointer;
     background-color: #fff;
     border-bottom: 1px solid #d4d4d4;
   }
+
   .autocomplete-items div:hover {
     /*when hovering an item:*/
     background-color: #e9e9e9;
   }
+
   .autocomplete-active {
     /*when navigating through the items using the arrow keys:*/
     background-color: DodgerBlue !important;
@@ -59,16 +68,22 @@ h1, h2 {
   }
   
   #chili-names {
-      width:90%;
-      font-size:15px;
+      /* width:97%; */
+      font-size:20px;
       word-break:break-all;
-      column-count: 2;
+      /* column-count: 2; */
   }
-  
-  
+
   #solution {
       color: green;
       background-color: lightgrey;
+      margin: auto;
+      margin-top: 5vh;
+      width: 100%;
+      /* border: 3px solid grey; */
+      padding: 10px 0px;
+      text-align: center;
+      font-size: 5vh;
   }
   
   .collapsible {
@@ -81,7 +96,7 @@ h1, h2 {
     text-align: left;
     outline: none;
     font-size: 15px;
-    margin: 5% 0% 10% 0%;
+    margin: 5% 0% 2% 0%;
   }
   
   .active, .collapsible:hover {
@@ -93,24 +108,108 @@ h1, h2 {
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    width: 97%;
   }
   
+  @media only screen and (max-width: 1260px) {
+    h1 {
+      font-size: 6vh;
+    }
+    
+    #chili-names {
+      column-count: 3;
+    }
+  
+    .display1, .display2 {
+      border-style: solid;
+      border-color: grey;
+      display: inline-block;
+      min-width: 40vh;
+      min-height: 40vh;
+      border-radius: 5px;
+    }
+
+    .display2 {
+      vertical-align: top;
+    }
+
+    .center {
+      margin: auto;
+      width: 90%;
+      border: 3px solid grey;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #app {
+      margin: 0vh 10vh;
+      background-color: white;
+      border-radius: 5px;
+      /* padding-bottom: 50vh; */
+    }
+    
+    .form {
+      padding: 2vh;
+    }
+
+    .content {
+      width: 95%;
+    }
+  } 
+
+@media only screen and (max-width: 1060px) {
+  h1 {
+    font-size: 4vh;
+  }
+
+  #chili-names {
+    column-count: 2;
+  }
   .display1, .display2 {
     border-style: solid;
     border-color: grey;
     display: inline-block;
-    min-width: 30vh;
-    min-height: 30vh;
+    min-width: 50vh;
+    min-height: 50vh;
     border-radius: 5px;
-    margin-left: 10vh;
+  }
+
+  .content {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #chili-names {
+    column-count: 1;
+  }
+}
+
+@media only screen and (min-width: 1261px) {
+  .center {
+    margin: auto;
+    width: 90%;
+    border: 3px solid grey;
+    padding: 10px;
+    text-align: center;
   }
   
-  .display1 {
-    margin-left: 10vh;
+  #chili-names {
+    column-count: 4;
+}
+
+  .display1, .display2 {
+    border-style: solid;
+    border-color: grey;
+    display: inline-block;
+    min-width: 50vh;
+    min-height: 50vh;
+    border-radius: 5px;
   }
   
   .display2 {
     vertical-align: top;
+    text-align: left;
   }
   
   #app {
@@ -122,5 +221,7 @@ h1, h2 {
   
   .form {
     padding: 2vh;
+    font-size: large;
+    margin: 2vh;
   }
-  
+}
