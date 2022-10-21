@@ -8,7 +8,7 @@ import { write_guess } from './store.js';
     total_guess++;
     if (chili_input.value.split(" ").join("_")==chili_picture.src.split("/")[6]) {
         good_guess++;
-        solution.innerHTML = "Correct";
+        solution.innerHTML = "Correct! Good job!";
       } else {
         solution.innerHTML = "Nope it was:" + chili_picture.src.split("/")[6].split("_").join(" ");
       }
